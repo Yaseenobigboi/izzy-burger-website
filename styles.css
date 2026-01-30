@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    background: linear-gradient(135deg, #FF6B00 0%, #FF8534 100%);
+    padding: 15px 0;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: #2B1A14;
+    padding: 5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+.btn-contact {
+    background: #2B1A14;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-contact:hover {
+    background: #1a0f0c;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(180deg, #2B1A14 0%, #1a0f0c 100%);
+    padding: 80px 0 0;
+    text-align: center;
+    color: white;
+    min-height: 600px;
+}
+
+.hero-title {
+    font-size: 72px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #FF6B00;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 0, 0.4);
+}
+
+.hero-burgers {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 60px;
+    gap: 20px;
+}
+
+.burger-img {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(135deg, #FF8534 0%, #FFB366 100%);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.burger-img::before {
+    content: '🍔';
+    font-size: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Popular Menu Section */
+.popular-menu {
+    background: #F5F5F5;
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 56px;
+    font-weight: 900;
+    color: #FF6B00;
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-img {
+    width: 100%;
+    height: 250px;
+    background: #ddd;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.menu-img::before {
+    content: '🍔';
+    font-size: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-item h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #2B1A14;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FF6B00;
+}
+
+.menu-button-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Locations Section */
+.locations {
+    background: white;
+    padding: 80px 0;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.location-card {
+    text-align: center;
+}
+
+.location-img {
+    width: 100%;
+    height: 300px;
+    background: #ddd;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.location-img::before {
+    content: '🏪';
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.location-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #2B1A14;
+}
+
+/* Delivery Section */
+.delivery {
+    background: #F5F5F5;
+    padding: 80px 0;
+}
+
+.delivery-container {
+    background: linear-gradient(135deg, #FF6B00 0%, #FF8534 100%);
+    border-radius: 30px;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    gap: 40px;
+}
+
+.delivery-content {
+    flex: 1;
+    color: white;
+}
+
+.delivery-content h2 {
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.delivery-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.delivery-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-delivery {
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.btn-mrd {
+    background: #4FC3F7;
+    color: #1a1a1a;
+}
+
+.btn-uber {
+    background: #00D66F;
+    color: #1a1a1a;
+}
+
+.btn-delivery:hover {
+    transform: translateY(-2px);
+}
+
+.delivery-logos {
+    display: flex;
+    gap: 30px;
+}
+
+.logo-box {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 900;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo-mrd {
+    background: #4FC3F7;
+    color: #1a1a1a;
+}
+
+.logo-uber {
+    background: #00D66F;
+    color: #1a1a1a;
+}
+
+.mrd-logo {
+    display: flex;
+    align-items: center;
+}
+
+.mrd-d {
+    font-size: 64px;
+    margin-left: -5px;
+}
+
+.uber-logo {
+    text-align: center;
+    line-height: 1.1;
+    font-size: 42px;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(180deg, #2B1A14 0%, #1a0f0c 100%);
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-column h3 {
+    color: #FF6B00;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.footer-column p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #FF6B00;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-logo h2 {
+    font-size: 120px;
+    font-weight: 900;
+    color: #FF6B00;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .hero-burgers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .burger-img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .locations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .delivery-container {
+        flex-direction: column;
+        padding: 40px 30px;
+    }
+
+    .delivery-content h2 {
+        font-size: 32px;
+    }
+
+    .delivery-logos {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .logo-box {
+        width: 150px;
+        height: 150px;
+        font-size: 36px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-logo h2 {
+        font-size: 60px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}

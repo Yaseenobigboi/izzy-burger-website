@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <circle cx="30" cy="30" r="28" fill="#2B1A14"/>
+  <circle cx="30" cy="30" r="24" fill="#FF6B00"/>
+  
+  <!-- Burger icon -->
+  <g transform="translate(15, 18)">
+    <!-- Top bun -->
+    <ellipse cx="15" cy="3" rx="14" ry="4" fill="#F4A460"/>
+    <!-- Lettuce -->
+    <rect x="3" y="7" width="24" height="2" fill="#90EE90" rx="1"/>
+    <!-- Patty -->
+    <rect x="2" y="10" width="26" height="4" fill="#8B4513" rx="2"/>
+    <!-- Cheese -->
+    <rect x="3" y="15" width="24" height="2" fill="#FFD700" rx="1"/>
+    <!-- Bottom bun -->
+    <rect x="2" y="18" width="26" height="5" fill="#D2691E" rx="2"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="30" y="50" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white" text-anchor="middle">IZZY BURGER</text>
+</svg>
