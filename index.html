@@ -3,161 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Izzy Burger - Burgers That Hit The Spot</title>
+    <title>IzzyBurger - Flame Grilled Beef | Est. 2016</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Header -->
+    <!-- NAV -->
     <header class="navbar">
         <div class="container nav-container">
-            <div class="logo">
-                <img src="logo.svg" alt="Izzy Burger Logo">
+            <div class="logo-section">
+                <div class="logo-circle">
+                    <img src="logo.svg" alt="IzzyBurger Logo">
+                </div>
+                <div class="logo-text">
+                    <span class="brand-name">IzzyBurger</span>
+                    <span class="tagline">Flame Grilled Beef</span>
+                </div>
             </div>
             <nav class="nav-links">
-                <a href="#menu">Our Menu</a>
-                <a href="#order">Order Now</a>
-                <a href="#locations">Our Locations</a>
+                <a href="#menu">Menu</a>
+                <a href="#order">Order</a>
+                <a href="#locations">Locations</a>
+                <a href="#contact">Contact</a>
             </nav>
-            <a href="#contact" class="btn-contact">Contact Us</a>
+            <a href="#order" class="btn-order">Order Now</a>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- HERO -->
     <section class="hero">
+        <div class="hero-overlay"></div>
         <div class="container hero-container">
-            <h1 class="hero-title">BURGERS THAT<br>HIT THE SPOT</h1>
-            <a href="#order" class="btn-primary">Order Burgers Now</a>
-            <div class="hero-burgers">
-                <div class="burger-img"></div>
-                <div class="burger-img"></div>
-                <div class="burger-img"></div>
+            <div class="hero-badge">EST. 2016</div>
+            <h1 class="hero-title">CAPE TOWN'S<br>FLAME-GRILLED LEGEND</h1>
+            <p class="hero-subtitle">Juicy, flame-grilled beef burgers that hit different. Every single time.</p>
+            <div class="hero-buttons">
+                <a href="#order" class="btn-hero-primary">Order Now</a>
+                <a href="#menu" class="btn-hero-secondary">See Menu</a>
             </div>
+        </div>
+        <div class="hero-decorative-circles">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
         </div>
     </section>
 
-    <!-- Popular Menu Section -->
+    <!-- MENU -->
     <section class="popular-menu" id="menu">
         <div class="container">
-            <h2 class="section-title">POPULAR MENU</h2>
+            <div class="section-badge">THE MENU</div>
+            <h2 class="section-title">Crowd Favorites</h2>
+            <p class="section-subtitle">These are the burgers everyone keeps coming back for</p>
             <div class="menu-grid">
                 <div class="menu-item">
-                    <div class="menu-img menu-img-1"></div>
-                    <h3>Izzy Dag Burger</h3>
-                    <p class="price">R200.00</p>
+                    <div class="menu-circle">
+                        <div class="menu-img"></div>
+                    </div>
+                    <h3>The Izzy Dag</h3>
+                    <p class="menu-desc">Double flame-grilled patty with special sauce</p>
+                    <p class="price">R200</p>
                 </div>
                 <div class="menu-item">
-                    <div class="menu-img menu-img-2"></div>
-                    <h3>Izzy Busta Burger</h3>
-                    <p class="price">R150.00</p>
+                    <div class="menu-circle">
+                        <div class="menu-img"></div>
+                    </div>
+                    <h3>The Busta</h3>
+                    <p class="menu-desc">Loaded beef burger with all the trimmings</p>
+                    <p class="price">R150</p>
                 </div>
                 <div class="menu-item">
-                    <div class="menu-img menu-img-3"></div>
-                    <h3>The Crispy Chicken Burger</h3>
-                    <p class="price">R200.00</p>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-img menu-img-1"></div>
-                    <h3>Izzy Dag Burger</h3>
-                    <p class="price">R200.00</p>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-img menu-img-1"></div>
-                    <h3>Izzy Dag Burger</h3>
-                    <p class="price">R200.00</p>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-img menu-img-1"></div>
-                    <h3>Izzy Dag Burger</h3>
-                    <p class="price">R200.00</p>
+                    <div class="menu-circle">
+                        <div class="menu-img"></div>
+                    </div>
+                    <h3>Crispy Chicken</h3>
+                    <p class="menu-desc">Perfectly seasoned crispy chicken fillet</p>
+                    <p class="price">R180</p>
                 </div>
             </div>
             <div class="menu-button-container">
-                <a href="#fullmenu" class="btn-primary">View Full Menu</a>
+                <a href="#fullmenu" class="btn-secondary">Explore Full Menu</a>
             </div>
         </div>
     </section>
 
-    <!-- Locations Section -->
-    <section class="locations" id="locations">
-        <div class="container">
-            <h2 class="section-title">OUR LOCATIONS</h2>
-            <div class="locations-grid">
-                <div class="location-card">
-                    <div class="location-img location-img-1"></div>
-                    <h3>Izzy Burger Athlone</h3>
-                    <a href="#" class="btn-primary">Get Directions</a>
-                </div>
-                <div class="location-card">
-                    <div class="location-img location-img-2"></div>
-                    <h3>Izzy Burger Goodwood</h3>
-                    <a href="#" class="btn-primary">Get Directions</a>
-                </div>
-                <div class="location-card">
-                    <div class="location-img location-img-3"></div>
-                    <h3>Izzy Burger Wynberg</h3>
-                    <a href="#" class="btn-primary">Get Directions</a>
-                </div>
-                <div class="location-card">
-                    <div class="location-img location-img-4"></div>
-                    <h3>Izzy Burger Woodstock</h3>
-                    <a href="#" class="btn-primary">Get Directions</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Delivery Section -->
+    <!-- DELIVERY -->
     <section class="delivery" id="order">
         <div class="container">
-            <div class="delivery-container">
-                <div class="delivery-content">
-                    <h2>IZZY BURGERS —<br>DELIVERED FAST,<br>EATEN FASTER</h2>
-                    <p>Your burger craving ends here. Tap Mr D or Uber Eats, choose Izzy Burger, and enjoy pure perfection in every bite</p>
-                    <div class="delivery-buttons">
-                        <a href="#" class="btn-delivery btn-mrd">Mr D Food</a>
-                        <a href="#" class="btn-delivery btn-uber">Uber Eats</a>
+            <div class="delivery-hero">
+                <div class="section-badge">DELIVERY</div>
+                <h2 class="section-title">Too Hungry to Wait?<br>We've Got You</h2>
+                <p class="section-subtitle">Hot, fresh burgers delivered straight to your door</p>
+                <div class="delivery-grid">
+                    <div class="delivery-card">
+                        <div class="delivery-icon-circle">
+                            <span class="delivery-emoji">🍔</span>
+                        </div>
+                        <h3>Mr D Food</h3>
+                        <p>Quick delivery from your closest location</p>
+                        <a href="#" class="btn-delivery-card btn-mrd">Order on Mr D →</a>
                     </div>
-                </div>
-                <div class="delivery-logos">
-                    <div class="logo-box logo-mrd">
-                        <span class="mrd-logo">Mr<span class="mrd-d">D</span></span>
+                    <div class="delivery-card">
+                        <div class="delivery-icon-circle">
+                            <span class="delivery-emoji">🚗</span>
+                        </div>
+                        <h3>Uber Eats</h3>
+                        <p>Real-time tracking & contactless delivery</p>
+                        <a href="#" class="btn-delivery-card btn-uber">Order on Uber Eats →</a>
                     </div>
-                    <div class="logo-box logo-uber">
-                        <span class="uber-logo">Uber<br>Eats</span>
+                    <div class="delivery-card">
+                        <div class="delivery-icon-circle">
+                            <span class="delivery-emoji">🔥</span>
+                        </div>
+                        <h3>Always Fresh</h3>
+                        <p>Grilled when you order, never pre-made</p>
+                        <div class="delivery-features">
+                            <span>⚡ Average 30 mins</span>
+                            <span>📦 Safe packaging</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- LOCATIONS -->
+    <section class="locations" id="locations">
+        <div class="container">
+            <div class="section-badge">FIND US</div>
+            <h2 class="section-title">Four Spots Across Cape Town</h2>
+            <p class="section-subtitle">Stop by and grab a burger at any of our locations</p>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-circle">
+                        <div class="location-img"></div>
+                    </div>
+                    <h3>Athlone</h3>
+                    <p class="location-address">123 Main Road, Athlone</p>
+                    <a href="#" class="btn-location">Get Directions →</a>
+                </div>
+                <div class="location-card">
+                    <div class="location-circle">
+                        <div class="location-img"></div>
+                    </div>
+                    <h3>Goodwood</h3>
+                    <p class="location-address">456 Voortrekker Rd, Goodwood</p>
+                    <a href="#" class="btn-location">Get Directions →</a>
+                </div>
+                <div class="location-card">
+                    <div class="location-circle">
+                        <div class="location-img"></div>
+                    </div>
+                    <h3>Wynberg</h3>
+                    <p class="location-address">789 Main Rd, Wynberg</p>
+                    <a href="#" class="btn-location">Get Directions →</a>
+                </div>
+                <div class="location-card">
+                    <div class="location-circle">
+                        <div class="location-img"></div>
+                    </div>
+                    <h3>Woodstock</h3>
+                    <p class="location-address">321 Albert Rd, Woodstock</p>
+                    <a href="#" class="btn-location">Get Directions →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container about-container">
+            <div class="about-content">
+                <div class="section-badge">THE STORY</div>
+                <h2 class="section-title">Ten Years of Flame-Grilled Excellence</h2>
+                <p class="about-text">Since 2016, we've been serving Cape Town the juiciest, most flavorful burgers around. Our secret? Real flame grills, quality beef, and no shortcuts. Just honest, delicious food that keeps you coming back.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <div class="feature-icon">🔥</div>
+                        <h3>Real Flames</h3>
+                        <p>Charcoal-grilled flavor</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🥩</div>
+                        <h3>Quality Beef</h3>
+                        <p>Premium cuts only</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">✨</div>
+                        <h3>Fresh Daily</h3>
+                        <p>Never frozen</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="about-circle"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="footer" id="contact">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Opening Hours</h3>
-                    <p>Monday - Thursday& Saturday: 12pm - 9pm</p>
-                    <p>Friday: 2pm - 9pm</p>
-                    <p>Sundays Closed</p>
+            <div class="footer-main">
+                <div class="footer-logo-section">
+                    <div class="footer-logo-circle">
+                        <span class="footer-burger-icon">🍔</span>
+                    </div>
+                    <h2 class="footer-brand">IzzyBurger</h2>
+                    <p class="footer-tagline">Flame Grilled Beef</p>
+                    <p class="footer-est">EST. 2016</p>
                 </div>
-                <div class="footer-column">
-                    <h3>Contact Details</h3>
-                    <p>info@izzyburger.co.za</p>
-                    <p>073 111 1111</p>
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h3>Opening Hours</h3>
+                        <p>Monday - Thursday: 12pm - 9pm</p>
+                        <p>Friday: 2pm - 9pm</p>
+                        <p>Saturday: 12pm - 9pm</p>
+                        <p><strong>Sundays: Closed</strong></p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Get In Touch</h3>
+                        <p><a href="mailto:info@izzyburger.co.za">info@izzyburger.co.za</a></p>
+                        <p><a href="tel:0731111111">073 111 1111</a></p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Follow Us</h3>
+                        <p><a href="#">Instagram</a></p>
+                        <p><a href="#">Facebook</a></p>
+                        <p><a href="#">TikTok</a></p>
+                    </div>
                 </div>
-                <div class="footer-column">
-                    <h3>Follow Us</h3>
-                    <p><a href="#">Instagram</a></p>
-                    <p><a href="#">Facebook</a></p>
-                </div>
-            </div>
-            <div class="footer-logo">
-                <h2>IZZY BURGER</h2>
             </div>
             <div class="footer-bottom">
-                <p>Powered by Code & Cameras</p>
-                <p>2026 Izzy Burger - All rights reserved</p>
-                <p>THIS SITE IS CURRENTLY IN TESTING AND DEVELOPMENT</p>
+                <p>&copy; 2026 IzzyBurger. All rights reserved.</p>
+                <p>Powered by [WIP]</p>
             </div>
         </div>
     </footer>
