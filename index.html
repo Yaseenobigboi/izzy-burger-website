@@ -14,13 +14,7 @@
     <header class="navbar">
         <div class="container nav-container">
             <div class="logo-section">
-                <div class="logo-circle">
-                    <img src="logo.svg" alt="IzzyBurger Logo">
-                </div>
-                <div class="logo-text">
-                    <span class="brand-name">IzzyBurger</span>
-                    <span class="tagline">Flame Grilled Beef</span>
-                </div>
+                <img src="assets/logos/logo.svg" alt="IzzyBurger Logo" class="main-logo">
             </div>
             <nav class="nav-links">
                 <a href="#menu">Menu</a>
@@ -28,7 +22,11 @@
                 <a href="#locations">Locations</a>
                 <a href="#contact">Contact</a>
             </nav>
-            <a href="#order" class="btn-order">Order Now</a>
+            <div class="nav-buttons">
+                <a href="assets/menu.pdf" target="_blank" class="btn-menu-pdf">View Menu PDF</a>
+                <a href="tel:0731111111" class="btn-phone">Phone Order (Collect)</a>
+                <a href="#order" class="btn-order">Order Now</a>
+            </div>
         </div>
     </header>
 
@@ -41,6 +39,7 @@
             <p class="hero-subtitle">Juicy, flame-grilled beef burgers that hit different. Every single time.</p>
             <div class="hero-buttons">
                 <a href="#order" class="btn-hero-primary">Order Now</a>
+                <a href="tel:0731111111" class="btn-hero-secondary">Phone Order (Collect)</a>
                 <a href="#menu" class="btn-hero-secondary">See Menu</a>
             </div>
         </div>
@@ -60,7 +59,7 @@
             <div class="menu-grid">
                 <div class="menu-item">
                     <div class="menu-circle">
-                        <div class="menu-img"></div>
+                        <img src="assets/images/burger.jpeg" alt="The Izzy Dag" class="menu-img">
                     </div>
                     <h3>The Izzy Dag</h3>
                     <p class="menu-desc">Double flame-grilled patty with special sauce</p>
@@ -68,7 +67,7 @@
                 </div>
                 <div class="menu-item">
                     <div class="menu-circle">
-                        <div class="menu-img"></div>
+                        <img src="assets/images/burger.jpeg" alt="The Busta" class="menu-img">
                     </div>
                     <h3>The Busta</h3>
                     <p class="menu-desc">Loaded beef burger with all the trimmings</p>
@@ -76,7 +75,7 @@
                 </div>
                 <div class="menu-item">
                     <div class="menu-circle">
-                        <div class="menu-img"></div>
+                        <img src="assets/images/burger.jpeg" alt="Crispy Chicken" class="menu-img">
                     </div>
                     <h3>Crispy Chicken</h3>
                     <p class="menu-desc">Perfectly seasoned crispy chicken fillet</p>
@@ -84,7 +83,7 @@
                 </div>
             </div>
             <div class="menu-button-container">
-                <a href="#fullmenu" class="btn-secondary">Explore Full Menu</a>
+                <a href="assets/menu.pdf" target="_blank" class="btn-secondary">Explore Full Menu</a>
             </div>
         </div>
     </section>
@@ -99,29 +98,42 @@
                 <div class="delivery-grid">
                     <div class="delivery-card">
                         <div class="delivery-icon-circle">
-                            <span class="delivery-emoji">🍔</span>
+                            <img src="assets/logos/mrd.svg" alt="Mr D Food" class="delivery-logo">
                         </div>
                         <h3>Mr D Food</h3>
                         <p>Quick delivery from your closest location</p>
-                        <a href="#" class="btn-delivery-card btn-mrd">Order on Mr D →</a>
+                        <div class="delivery-links">
+                            <a href="https://www.mrd.com/delivery/restaurant/izzyburger-wynberg/3342" target="_blank" class="btn-delivery-card btn-mrd">Wynberg →</a>
+                            <a href="https://www.mrd.com/delivery/restaurant/izzyburger-athlone-athlone/28933" target="_blank" class="btn-delivery-card btn-mrd">Athlone →</a>
+                            <a href="https://www.mrd.com/delivery/restaurant/izzyburger-woodstock/20154" target="_blank" class="btn-delivery-card btn-mrd">Woodstock →</a>
+                            <a href="https://www.mrd.com/delivery/restaurant/izzyburger-goodwood-goodwood/13526" target="_blank" class="btn-delivery-card btn-mrd">Goodwood →</a>
+                        </div>
                     </div>
                     <div class="delivery-card">
                         <div class="delivery-icon-circle">
-                            <span class="delivery-emoji">🚗</span>
+                            <img src="assets/logos/ubereats.svg" alt="Uber Eats" class="delivery-logo">
                         </div>
                         <h3>Uber Eats</h3>
                         <p>Real-time tracking & contactless delivery</p>
-                        <a href="#" class="btn-delivery-card btn-uber">Order on Uber Eats →</a>
+                        <div class="delivery-links">
+                            <a href="https://www.ubereats.com/za/store/izzy-burger-wynberg-halaal/5d2HvFMMQtSi6FGbYCaCiw" target="_blank" class="btn-delivery-card btn-uber">Wynberg →</a>
+                            <a href="https://www.ubereats.com/za/store/izzy-burger-athlone/nXQrpIJlXpiZD2XL8xEycg" target="_blank" class="btn-delivery-card btn-uber">Athlone →</a>
+                            <a href="https://www.ubereats.com/za/store/izzy-burger-woodstock-halaal/cgPgs-x-UqGUlsVPlw99NQ" target="_blank" class="btn-delivery-card btn-uber">Woodstock →</a>
+                            <a href="https://www.ubereats.com/za/store/izzy-burger-goodwood-halaal/wMx2ij7CSy-n79XbwmOu6A" target="_blank" class="btn-delivery-card btn-uber">Goodwood →</a>
+                        </div>
                     </div>
                     <div class="delivery-card">
                         <div class="delivery-icon-circle">
-                            <span class="delivery-emoji">🔥</span>
+                            <svg class="delivery-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C11 7 8 9 8 13C8 15.21 9.79 17 12 17C14.21 17 16 15.21 16 13C16 9 13 7 12 2Z" fill="#E85D3C" stroke="white" stroke-width="1.5"/>
+                                <path d="M12 17C10.34 17 9 18.34 9 20C9 21.66 10.34 23 12 23C13.66 23 15 21.66 15 20C15 18.34 13.66 17 12 17Z" fill="#FF7A5C" stroke="white" stroke-width="1.5"/>
+                            </svg>
                         </div>
                         <h3>Always Fresh</h3>
                         <p>Grilled when you order, never pre-made</p>
                         <div class="delivery-features">
-                            <span>⚡ Average 30 mins</span>
-                            <span>📦 Safe packaging</span>
+                            <span><svg class="feature-icon-small" viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z" fill="#E85D3C"/></svg> Average 30 mins</span>
+                            <span><svg class="feature-icon-small" viewBox="0 0 24 24"><path d="M4 4h16v12H4V4zm2 2v8h12V6H6zm-2 12h16v2H4v-2z" fill="#E85D3C"/></svg> Safe packaging</span>
                         </div>
                     </div>
                 </div>
@@ -138,35 +150,55 @@
             <div class="locations-grid">
                 <div class="location-card">
                     <div class="location-circle">
-                        <div class="location-img"></div>
+                        <img src="assets/storefronts/athlone.jpg" alt="Athlone Storefront" class="location-img">
                     </div>
                     <h3>Athlone</h3>
                     <p class="location-address">123 Main Road, Athlone</p>
-                    <a href="#" class="btn-location">Get Directions →</a>
+                    <a href="https://maps.app.goo.gl/CaWXMyGgTcwMUH186" target="_blank" class="btn-location">Get Directions →</a>
+                    <div class="location-order-buttons">
+                        <a href="https://www.ubereats.com/za/store/izzy-burger-athlone/nXQrpIJlXpiZD2XL8xEycg" target="_blank" class="btn-delivery-card btn-uber">Order on Uber Eats</a>
+                        <a href="https://www.mrd.com/delivery/restaurant/izzyburger-athlone-athlone/28933" target="_blank" class="btn-delivery-card btn-mrd">Order on Mr D</a>
+                        <a href="tel:0731111111" class="btn-delivery-card btn-phone-location">Phone Order (Collect)</a>
+                    </div>
                 </div>
                 <div class="location-card">
                     <div class="location-circle">
-                        <div class="location-img"></div>
+                        <img src="assets/storefronts/goodwood.jpg" alt="Goodwood Storefront" class="location-img">
                     </div>
                     <h3>Goodwood</h3>
                     <p class="location-address">456 Voortrekker Rd, Goodwood</p>
-                    <a href="#" class="btn-location">Get Directions →</a>
+                    <a href="https://maps.app.goo.gl/paAm4hPmW88VTEWm9" target="_blank" class="btn-location">Get Directions →</a>
+                    <div class="location-order-buttons">
+                        <a href="https://www.ubereats.com/za/store/izzy-burger-goodwood-halaal/wMx2ij7CSy-n79XbwmOu6A" target="_blank" class="btn-delivery-card btn-uber">Order on Uber Eats</a>
+                        <a href="https://www.mrd.com/delivery/restaurant/izzyburger-goodwood-goodwood/13526" target="_blank" class="btn-delivery-card btn-mrd">Order on Mr D</a>
+                        <a href="tel:0731111111" class="btn-delivery-card btn-phone-location">Phone Order (Collect)</a>
+                    </div>
                 </div>
                 <div class="location-card">
                     <div class="location-circle">
-                        <div class="location-img"></div>
+                        <img src="assets/storefronts/wynberg.jpg" alt="Wynberg Storefront" class="location-img">
                     </div>
                     <h3>Wynberg</h3>
                     <p class="location-address">789 Main Rd, Wynberg</p>
-                    <a href="#" class="btn-location">Get Directions →</a>
+                    <a href="https://maps.app.goo.gl/4HFV61QSPjP2sMVE9" target="_blank" class="btn-location">Get Directions →</a>
+                    <div class="location-order-buttons">
+                        <a href="https://www.ubereats.com/za/store/izzy-burger-wynberg-halaal/5d2HvFMMQtSi6FGbYCaCiw" target="_blank" class="btn-delivery-card btn-uber">Order on Uber Eats</a>
+                        <a href="https://www.mrd.com/delivery/restaurant/izzyburger-wynberg/3342" target="_blank" class="btn-delivery-card btn-mrd">Order on Mr D</a>
+                        <a href="tel:0731111111" class="btn-delivery-card btn-phone-location">Phone Order (Collect)</a>
+                    </div>
                 </div>
                 <div class="location-card">
                     <div class="location-circle">
-                        <div class="location-img"></div>
+                        <img src="assets/storefronts/woodstock.jpg" alt="Woodstock Storefront" class="location-img">
                     </div>
                     <h3>Woodstock</h3>
                     <p class="location-address">321 Albert Rd, Woodstock</p>
-                    <a href="#" class="btn-location">Get Directions →</a>
+                    <a href="https://maps.app.goo.gl/Ua9aXQVKhLn1BNyf9" target="_blank" class="btn-location">Get Directions →</a>
+                    <div class="location-order-buttons">
+                        <a href="https://www.ubereats.com/za/store/izzy-burger-woodstock-halaal/cgPgs-x-UqGUlsVPlw99NQ" target="_blank" class="btn-delivery-card btn-uber">Order on Uber Eats</a>
+                        <a href="https://www.mrd.com/delivery/restaurant/izzyburger-woodstock/20154" target="_blank" class="btn-delivery-card btn-mrd">Order on Mr D</a>
+                        <a href="tel:0731111111" class="btn-delivery-card btn-phone-location">Phone Order (Collect)</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -181,24 +213,40 @@
                 <p class="about-text">Since 2016, we've been serving Cape Town the juiciest, most flavorful burgers around. Our secret? Real flame grills, quality beef, and no shortcuts. Just honest, delicious food that keeps you coming back.</p>
                 <div class="about-features">
                     <div class="feature">
-                        <div class="feature-icon">🔥</div>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C11 7 8 9 8 13C8 15.21 9.79 17 12 17C14.21 17 16 15.21 16 13C16 9 13 7 12 2Z" fill="#E85D3C"/>
+                                <path d="M12 17C10.34 17 9 18.34 9 20C9 21.66 10.34 23 12 23C13.66 23 15 21.66 15 20C15 18.34 13.66 17 12 17Z" fill="#FF7A5C"/>
+                            </svg>
+                        </div>
                         <h3>Real Flames</h3>
                         <p>Charcoal-grilled flavor</p>
                     </div>
                     <div class="feature">
-                        <div class="feature-icon">🥩</div>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 2C5.9 2 5 2.9 5 4V20C5 21.1 5.9 22 7 22H17C18.1 22 19 21.1 19 20V4C19 2.9 18.1 2 17 2H7Z" fill="#8B4513"/>
+                                <path d="M9 6H15V8H9V6ZM9 10H15V12H9V10ZM9 14H15V16H9V14Z" fill="#A0522D"/>
+                            </svg>
+                        </div>
                         <h3>Quality Beef</h3>
                         <p>Premium cuts only</p>
                     </div>
                     <div class="feature">
-                        <div class="feature-icon">✨</div>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L13.5 8.5L20 10L13.5 11.5L12 18L10.5 11.5L4 10L10.5 8.5L12 2Z" fill="#FFD700"/>
+                                <path d="M18 3L18.5 5.5L21 6L18.5 6.5L18 9L17.5 6.5L15 6L17.5 5.5L18 3Z" fill="#FFA500"/>
+                                <path d="M6 15L6.5 17L9 17.5L6.5 18L6 20L5.5 18L3 17.5L5.5 17L6 15Z" fill="#FFA500"/>
+                            </svg>
+                        </div>
                         <h3>Fresh Daily</h3>
                         <p>Never frozen</p>
                     </div>
                 </div>
             </div>
             <div class="about-image">
-                <div class="about-circle"></div>
+                <img src="assets/images/burger.jpeg" alt="IzzyBurger" class="about-circle">
             </div>
         </div>
     </section>
@@ -208,10 +256,7 @@
         <div class="container">
             <div class="footer-main">
                 <div class="footer-logo-section">
-                    <div class="footer-logo-circle">
-                        <span class="footer-burger-icon">🍔</span>
-                    </div>
-                    <h2 class="footer-brand">IzzyBurger</h2>
+                    <img src="assets/logos/logo.svg" alt="IzzyBurger Logo" class="footer-logo">
                     <p class="footer-tagline">Flame Grilled Beef</p>
                     <p class="footer-est">EST. 2016</p>
                 </div>
@@ -230,9 +275,9 @@
                     </div>
                     <div class="footer-column">
                         <h3>Follow Us</h3>
-                        <p><a href="#">Instagram</a></p>
-                        <p><a href="#">Facebook</a></p>
-                        <p><a href="#">TikTok</a></p>
+                        <p><a href="https://www.instagram.com/theizzyburger/" target="_blank">Instagram</a></p>
+                        <p><a href="https://www.facebook.com/Theizzyburger/" target="_blank">Facebook</a></p>
+                        <p><a href="https://www.tiktok.com/@theizzyburger" target="_blank">TikTok</a></p>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="40" fill="#06BCEE"/>
+  <text x="100" y="95" font-family="Arial, sans-serif" font-size="60" font-weight="900" fill="#1A1A1A" text-anchor="middle">MR D</text>
+  <path d="M 80 120 L 100 150 L 85 155 L 75 145 L 70 155 L 55 150 L 65 135 L 60 125 Z" fill="#1A1A1A"/>
+  <path d="M 120 120 L 140 155 L 125 160 L 105 125 Z" fill="#1A1A1A"/>
+</svg>

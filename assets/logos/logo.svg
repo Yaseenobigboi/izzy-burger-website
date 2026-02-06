@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <!-- White background box -->
+  <rect x="0" y="0" width="400" height="100" fill="white"/>
+  
+  <!-- Orange top border -->
+  <rect x="0" y="0" width="400" height="8" fill="#E85D3C"/>
+  
+  <!-- Orange bottom border -->
+  <rect x="0" y="92" width="400" height="8" fill="#E85D3C"/>
+  
+  <!-- Burger Icon -->
+  <g transform="translate(30, 30)">
+    <!-- Top bun -->
+    <path d="M 5 8 Q 5 0, 20 0 Q 35 0, 35 8 L 35 12 L 5 12 Z" 
+          fill="#E85D3C" stroke="white" stroke-width="2"/>
+    
+    <!-- Squiggly lettuce -->
+    <path d="M 5 12 Q 8 14, 11 12 Q 14 10, 17 12 Q 20 14, 23 12 Q 26 10, 29 12 Q 32 14, 35 12 L 35 16 L 5 16 Z" 
+          fill="#E85D3C" stroke="white" stroke-width="2"/>
+    
+    <!-- First patty -->
+    <rect x="5" y="16" width="30" height="5" fill="#E85D3C" stroke="white" stroke-width="2"/>
+    
+    <!-- Second patty -->
+    <rect x="5" y="21" width="30" height="5" fill="#E85D3C" stroke="white" stroke-width="2"/>
+    
+    <!-- Bottom bun -->
+    <rect x="5" y="26" width="30" height="7" fill="#E85D3C" stroke="white" stroke-width="2" rx="2"/>
+  </g>
+  
+  <!-- IZZYBURGER text with white outline -->
+  <g>
+    <!-- White outline (drawn first, thicker) -->
+    <text x="85" y="62" 
+          font-family="Arial, sans-serif" 
+          font-size="32" 
+          font-weight="bold" 
+          fill="none" 
+          stroke="white" 
+          stroke-width="6"
+          letter-spacing="2">IZZYBURGER</text>
+    
+    <!-- Black text (drawn on top) -->
+    <text x="85" y="62" 
+          font-family="Arial, sans-serif" 
+          font-size="32" 
+          font-weight="bold" 
+          fill="black"
+          letter-spacing="2">IZZYBURGER</text>
+  </g>
+</svg>
