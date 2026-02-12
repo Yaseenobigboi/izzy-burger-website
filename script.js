@@ -1,3 +1,31 @@
+// Burger menu toggle
+const burgerBtn = document.getElementById('burgerBtn');
+const burgerDropdown = document.getElementById('burgerDropdown');
+
+if (burgerBtn && burgerDropdown) {
+    burgerBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        burgerBtn.classList.toggle('active');
+        burgerDropdown.classList.toggle('active');
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!burgerBtn.contains(e.target) && !burgerDropdown.contains(e.target)) {
+            burgerBtn.classList.remove('active');
+            burgerDropdown.classList.remove('active');
+        }
+    });
+    
+    // Close dropdown when clicking a link
+    burgerDropdown.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            burgerBtn.classList.remove('active');
+            burgerDropdown.classList.remove('active');
+        });
+    });
+}
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

@@ -17,15 +17,31 @@
                 <img src="assets/logos/logo.svg" alt="IzzyBurger Logo" class="main-logo">
             </div>
             <nav class="nav-links">
-                <a href="#menu">Menu</a>
-                <a href="#order">Order</a>
+                <a href="assets/menu.pdf" target="_blank">Menu</a>
+                <a href="#locations">Order</a>
                 <a href="#locations">Locations</a>
-                <a href="#contact">Contact</a>
             </nav>
-            <div class="nav-buttons">
-                <a href="assets/menu.pdf" target="_blank" class="btn-menu-pdf">View Menu PDF</a>
-                <a href="tel:0731111111" class="btn-phone">Phone Order (Collect)</a>
-                <a href="#order" class="btn-order">Order Now</a>
+            <button class="burger-menu-btn" aria-label="More options" id="burgerBtn">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Top Bun with sesame seeds -->
+                    <path d="M4 8 C4 6, 6 5, 16 5 C26 5, 28 6, 28 8 L27 9 L5 9 Z" fill="#D2691E" stroke="#A0522D" stroke-width="1.2"/>
+                    <circle cx="12" cy="7" r="0.8" fill="#F4A460"/>
+                    <circle cx="20" cy="7.5" r="0.7" fill="#F4A460"/>
+                    <circle cx="16" cy="6.5" r="0.6" fill="#F4A460"/>
+                    <!-- Lettuce Line -->
+                    <rect x="4" y="12" width="24" height="3" fill="#90EE90" rx="1.5" stroke="#228B22" stroke-width="0.5"/>
+                    <!-- Tomato/Cheese Line -->
+                    <rect x="4" y="17" width="24" height="3" fill="#FFD700" rx="1.5" stroke="#FFA500" stroke-width="0.5"/>
+                    <!-- Patty Line -->
+                    <rect x="4" y="22" width="24" height="3" fill="#8B4513" rx="1.5" stroke="#654321" stroke-width="0.5"/>
+                    <!-- Bottom Bun -->
+                    <path d="M4 27 L5 28 C5 29, 8 29.5, 16 29.5 C24 29.5, 27 29, 27 28 L28 27 Z" fill="#D2691E" stroke="#A0522D" stroke-width="1.2"/>
+                </svg>
+            </button>
+            <div class="burger-dropdown" id="burgerDropdown">
+                <a href="#about">Our Story</a>
+                <a href="#contact">Contact</a>
+                <a href="tel:0731111111">Call to Order</a>
             </div>
         </div>
     </header>
@@ -38,7 +54,7 @@
             <h1 class="hero-title">CAPE TOWN'S<br>FLAME-GRILLED LEGEND</h1>
             <p class="hero-subtitle">Juicy, flame-grilled beef burgers that hit different. Every single time.</p>
             <div class="hero-buttons">
-                <a href="#order" class="btn-hero-primary">Order Now</a>
+                <a href="#locations" class="btn-hero-primary">Order Now</a>
                 <a href="tel:0731111111" class="btn-hero-secondary">Phone Order (Collect)</a>
                 <a href="#menu" class="btn-hero-secondary">See Menu</a>
             </div>
@@ -50,103 +66,12 @@
         </div>
     </section>
 
-    <!-- MENU -->
-    <section class="popular-menu" id="menu">
-        <div class="container">
-            <div class="section-badge">THE MENU</div>
-            <h2 class="section-title">Crowd Favorites</h2>
-            <p class="section-subtitle">These are the burgers everyone keeps coming back for</p>
-            <div class="menu-grid">
-                <div class="menu-item">
-                    <div class="menu-circle">
-                        <img src="assets/images/burger.jpeg" alt="The Izzy Dag" class="menu-img">
-                    </div>
-                    <h3>The Izzy Dag</h3>
-                    <p class="menu-desc">Double flame-grilled patty with special sauce</p>
-                    <p class="price">R200</p>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-circle">
-                        <img src="assets/images/burger.jpeg" alt="The Busta" class="menu-img">
-                    </div>
-                    <h3>The Busta</h3>
-                    <p class="menu-desc">Loaded beef burger with all the trimmings</p>
-                    <p class="price">R150</p>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-circle">
-                        <img src="assets/images/burger.jpeg" alt="Crispy Chicken" class="menu-img">
-                    </div>
-                    <h3>Crispy Chicken</h3>
-                    <p class="menu-desc">Perfectly seasoned crispy chicken fillet</p>
-                    <p class="price">R180</p>
-                </div>
-            </div>
-            <div class="menu-button-container">
-                <a href="assets/menu.pdf" target="_blank" class="btn-secondary">Explore Full Menu</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- DELIVERY -->
-    <section class="delivery" id="order">
-        <div class="container">
-            <div class="delivery-hero">
-                <div class="section-badge">DELIVERY</div>
-                <h2 class="section-title">Too Hungry to Wait?<br>We've Got You</h2>
-                <p class="section-subtitle">Hot, fresh burgers delivered straight to your door</p>
-                <div class="delivery-grid">
-                    <div class="delivery-card">
-                        <div class="delivery-icon-circle">
-                            <img src="assets/logos/mrd.svg" alt="Mr D Food" class="delivery-logo">
-                        </div>
-                        <h3>Mr D Food</h3>
-                        <p>Quick delivery from your closest location</p>
-                        <div class="delivery-links">
-                            <a href="https://www.mrd.com/delivery/restaurant/izzyburger-wynberg/3342" target="_blank" class="btn-delivery-card btn-mrd">Wynberg →</a>
-                            <a href="https://www.mrd.com/delivery/restaurant/izzyburger-athlone-athlone/28933" target="_blank" class="btn-delivery-card btn-mrd">Athlone →</a>
-                            <a href="https://www.mrd.com/delivery/restaurant/izzyburger-woodstock/20154" target="_blank" class="btn-delivery-card btn-mrd">Woodstock →</a>
-                            <a href="https://www.mrd.com/delivery/restaurant/izzyburger-goodwood-goodwood/13526" target="_blank" class="btn-delivery-card btn-mrd">Goodwood →</a>
-                        </div>
-                    </div>
-                    <div class="delivery-card">
-                        <div class="delivery-icon-circle">
-                            <img src="assets/logos/ubereats.svg" alt="Uber Eats" class="delivery-logo">
-                        </div>
-                        <h3>Uber Eats</h3>
-                        <p>Real-time tracking & contactless delivery</p>
-                        <div class="delivery-links">
-                            <a href="https://www.ubereats.com/za/store/izzy-burger-wynberg-halaal/5d2HvFMMQtSi6FGbYCaCiw" target="_blank" class="btn-delivery-card btn-uber">Wynberg →</a>
-                            <a href="https://www.ubereats.com/za/store/izzy-burger-athlone/nXQrpIJlXpiZD2XL8xEycg" target="_blank" class="btn-delivery-card btn-uber">Athlone →</a>
-                            <a href="https://www.ubereats.com/za/store/izzy-burger-woodstock-halaal/cgPgs-x-UqGUlsVPlw99NQ" target="_blank" class="btn-delivery-card btn-uber">Woodstock →</a>
-                            <a href="https://www.ubereats.com/za/store/izzy-burger-goodwood-halaal/wMx2ij7CSy-n79XbwmOu6A" target="_blank" class="btn-delivery-card btn-uber">Goodwood →</a>
-                        </div>
-                    </div>
-                    <div class="delivery-card">
-                        <div class="delivery-icon-circle">
-                            <svg class="delivery-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2C11 7 8 9 8 13C8 15.21 9.79 17 12 17C14.21 17 16 15.21 16 13C16 9 13 7 12 2Z" fill="#E85D3C" stroke="white" stroke-width="1.5"/>
-                                <path d="M12 17C10.34 17 9 18.34 9 20C9 21.66 10.34 23 12 23C13.66 23 15 21.66 15 20C15 18.34 13.66 17 12 17Z" fill="#FF7A5C" stroke="white" stroke-width="1.5"/>
-                            </svg>
-                        </div>
-                        <h3>Always Fresh</h3>
-                        <p>Grilled when you order, never pre-made</p>
-                        <div class="delivery-features">
-                            <span><svg class="feature-icon-small" viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z" fill="#E85D3C"/></svg> Average 30 mins</span>
-                            <span><svg class="feature-icon-small" viewBox="0 0 24 24"><path d="M4 4h16v12H4V4zm2 2v8h12V6H6zm-2 12h16v2H4v-2z" fill="#E85D3C"/></svg> Safe packaging</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- LOCATIONS -->
     <section class="locations" id="locations">
         <div class="container">
             <div class="section-badge">FIND US</div>
-            <h2 class="section-title">Four Spots Across Cape Town</h2>
-            <p class="section-subtitle">Stop by and grab a burger at any of our locations</p>
+            <h2 class="section-title">Too Hungry to Wait?<br>We've Got You</h2>
+            <p class="section-subtitle">Hot, fresh burgers from four spots across Cape Town</p>
             <div class="locations-grid">
                 <div class="location-card">
                     <div class="location-circle">
@@ -204,6 +129,44 @@
         </div>
     </section>
 
+    <!-- MENU -->
+    <section class="popular-menu" id="menu">
+        <div class="container">
+            <div class="section-badge">THE MENU</div>
+            <h2 class="section-title">Fan Favorites</h2>
+            <p class="section-subtitle">These are the burgers everyone keeps coming back for</p>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-circle">
+                        <img src="assets/images/burger.jpeg" alt="The Izzy Dag" class="menu-img">
+                    </div>
+                    <h3>The Izzy Dag</h3>
+                    <p class="menu-desc">Double flame-grilled patty with special sauce</p>
+                    <p class="price">R999</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-circle">
+                        <img src="assets/images/burger.jpeg" alt="The Busta" class="menu-img">
+                    </div>
+                    <h3>The Busta</h3>
+                    <p class="menu-desc">Loaded beef burger with all the trimmings</p>
+                    <p class="price">R999</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-circle">
+                        <img src="assets/images/burger.jpeg" alt="Crispy Chicken" class="menu-img">
+                    </div>
+                    <h3>Crispy Chicken</h3>
+                    <p class="menu-desc">Perfectly seasoned crispy chicken fillet</p>
+                    <p class="price">R999</p>
+                </div>
+            </div>
+            <div class="menu-button-container">
+                <a href="assets/menu.pdf" target="_blank" class="btn-secondary">Explore Full Menu</a>
+            </div>
+        </div>
+    </section>
+
     <!-- ABOUT -->
     <section class="about" id="about">
         <div class="container about-container">
@@ -211,35 +174,17 @@
                 <div class="section-badge">THE STORY</div>
                 <h2 class="section-title">Ten Years of Flame-Grilled Excellence</h2>
                 <p class="about-text">Since 2016, we've been serving Cape Town the juiciest, most flavorful burgers around. Our secret? Real flame grills, quality beef, and no shortcuts. Just honest, delicious food that keeps you coming back.</p>
+                <p class="about-text about-ingredients"><strong>Quality ingredients are at the heart of everything we do.</strong> We source only the freshest produce daily—crisp lettuce, ripe tomatoes, and hand-cut onions. Our beef is never frozen, arriving fresh each morning and flame-grilled to perfection. Every burger is made to order, ensuring maximum freshness from grill to plate. It's this commitment to quality ingredients and absolute freshness that makes every IzzyBurger experience unforgettable.</p>
                 <div class="about-features">
                     <div class="feature">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2C11 7 8 9 8 13C8 15.21 9.79 17 12 17C14.21 17 16 15.21 16 13C16 9 13 7 12 2Z" fill="#E85D3C"/>
-                                <path d="M12 17C10.34 17 9 18.34 9 20C9 21.66 10.34 23 12 23C13.66 23 15 21.66 15 20C15 18.34 13.66 17 12 17Z" fill="#FF7A5C"/>
-                            </svg>
-                        </div>
                         <h3>Real Flames</h3>
                         <p>Charcoal-grilled flavor</p>
                     </div>
                     <div class="feature">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 2C5.9 2 5 2.9 5 4V20C5 21.1 5.9 22 7 22H17C18.1 22 19 21.1 19 20V4C19 2.9 18.1 2 17 2H7Z" fill="#8B4513"/>
-                                <path d="M9 6H15V8H9V6ZM9 10H15V12H9V10ZM9 14H15V16H9V14Z" fill="#A0522D"/>
-                            </svg>
-                        </div>
                         <h3>Quality Beef</h3>
                         <p>Premium cuts only</p>
                     </div>
                     <div class="feature">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2L13.5 8.5L20 10L13.5 11.5L12 18L10.5 11.5L4 10L10.5 8.5L12 2Z" fill="#FFD700"/>
-                                <path d="M18 3L18.5 5.5L21 6L18.5 6.5L18 9L17.5 6.5L15 6L17.5 5.5L18 3Z" fill="#FFA500"/>
-                                <path d="M6 15L6.5 17L9 17.5L6.5 18L6 20L5.5 18L3 17.5L5.5 17L6 15Z" fill="#FFA500"/>
-                            </svg>
-                        </div>
                         <h3>Fresh Daily</h3>
                         <p>Never frozen</p>
                     </div>
@@ -254,39 +199,92 @@
     <!-- FOOTER -->
     <footer class="footer" id="contact">
         <div class="container">
-            <div class="footer-main">
-                <div class="footer-logo-section">
+            <div class="footer-grid">
+                <div class="footer-brand">
                     <img src="assets/logos/logo.svg" alt="IzzyBurger Logo" class="footer-logo">
                     <p class="footer-tagline">Flame Grilled Beef</p>
-                    <p class="footer-est">EST. 2016</p>
+                    <div class="footer-badge">EST. 2016</div>
+                    <p class="footer-description">Cape Town's favorite flame-grilled burgers since 2016. Four locations serving quality beef burgers every day.</p>
                 </div>
-                <div class="footer-content">
-                    <div class="footer-column">
-                        <h3>Opening Hours</h3>
-                        <p>Monday - Thursday: 12pm - 9pm</p>
-                        <p>Friday: 2pm - 9pm</p>
-                        <p>Saturday: 12pm - 9pm</p>
-                        <p><strong>Sundays: Closed</strong></p>
+                <div class="footer-column">
+                    <h3>Opening Hours</h3>
+                    <div class="footer-hours">
+                        <div class="hour-row">
+                            <span class="day">Monday - Thursday</span>
+                            <span class="time">12pm - 9pm</span>
+                        </div>
+                        <div class="hour-row">
+                            <span class="day">Friday</span>
+                            <span class="time">2pm - 9pm</span>
+                        </div>
+                        <div class="hour-row">
+                            <span class="day">Saturday</span>
+                            <span class="time">12pm - 9pm</span>
+                        </div>
+                        <div class="hour-row closed">
+                            <span class="day">Sunday</span>
+                            <span class="time">Closed</span>
+                        </div>
                     </div>
-                    <div class="footer-column">
-                        <h3>Get In Touch</h3>
-                        <p><a href="mailto:info@izzyburger.co.za">info@izzyburger.co.za</a></p>
-                        <p><a href="tel:0731111111">073 111 1111</a></p>
+                </div>
+                <div class="footer-column">
+                    <h3>Get In Touch</h3>
+                    <div class="footer-links">
+                        <a href="mailto:info@izzyburger.co.za" class="footer-link">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 8L10.89 13.26C11.56 13.72 12.44 13.72 13.11 13.26L21 8M5 19H19C20.1 19 21 18.1 21 17V7C21 5.9 20.1 5 19 5H5C3.9 5 3 5.9 3 7V17C3 18.1 3.9 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            info@izzyburger.co.za
+                        </a>
+                        <a href="tel:0731111111" class="footer-link">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
+                            </svg>
+                            073 111 1111
+                        </a>
                     </div>
-                    <div class="footer-column">
-                        <h3>Follow Us</h3>
-                        <p><a href="https://www.instagram.com/theizzyburger/" target="_blank">Instagram</a></p>
-                        <p><a href="https://www.facebook.com/Theizzyburger/" target="_blank">Facebook</a></p>
-                        <p><a href="https://www.tiktok.com/@theizzyburger" target="_blank">TikTok</a></p>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/theizzyburger/" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                            Instagram
+                        </a>
+                        <a href="https://www.facebook.com/Theizzyburger/" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                            Facebook
+                        </a>
+                        <a href="https://www.tiktok.com/@theizzyburger" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                            </svg>
+                            TikTok
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 IzzyBurger. All rights reserved.</p>
-                <p>Powered by [WIP]</p>
+                <div class="footer-bottom-links">
+                    <a href="#menu">Menu</a>
+                    <a href="#locations">Locations</a>
+                    <a href="assets/menu.pdf" target="_blank">Full Menu PDF</a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Floating Call Button -->
+    <a href="tel:0731111111" class="floating-call-btn" aria-label="Call to Order">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="white"/>
+        </svg>
+    </a>
 
     <script src="script.js"></script>
 </body>
